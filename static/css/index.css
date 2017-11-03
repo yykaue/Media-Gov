@@ -1,0 +1,164 @@
+
+.aside {
+    width: 1.16rem;
+    float: left;
+    overflow: hidden;
+}
+.mainbody {
+    float: left;
+    width: 13.24rem;
+    background:#000 url("../../static/img/bg.png") center center no-repeat;
+    background-size: cover;
+}
+
+.mainbody .mask {
+    padding: 0.46rem 0.22rem 1rem 0.24rem;
+    background-color:  rgba(0,0,0,0.5);
+}
+
+.mainbody > .mask div > h2 {
+    height: 0.44rem;
+    line-height: 0.44rem;
+    margin-top: 0.37rem;
+    font-size: 0.18rem;
+    color: #ebc58c;
+}
+
+.mainbody > .mask div .tops {
+    height: 0.51rem;
+    line-height: 0.51rem;
+    padding-left: 0.26rem;
+    color: #fff;
+    background: rgba(66, 61, 55, 0.7);
+    clear: both;
+    border-radius: 0.03rem;
+}
+
+.mainbody > .mask div .tops span {
+    float: left;
+    font-size: 0.16rem;
+}
+
+.mainbody > .mask div .tops .upline {
+    float: left;
+    height: 0.23rem;
+    border-left: 1px solid #87745b;
+    margin: 0.14rem 0.15rem 0 0.14rem;
+}
+
+.mainbody > .mask div .tops .iconPc {
+    padding-left: 0.32rem;
+    background: url("../../static/img/icon-pc.png") left center no-repeat;
+    color: #ebc58c;
+}
+
+.mainbody > .mask div .tops .iconSina {
+    padding-left: 0.32rem;
+    margin-left: 0.38rem;
+    background: url("../../static/img/icon-sina.png") left center no-repeat;
+    color: #fff;
+}
+
+.mainbody > .mask div .tops .iconWeChat {
+    padding-left: 0.32rem;
+    margin-left: 0.38rem;
+    background: url("../../static/img/icon-weChat.png") left center no-repeat;
+    color: #fff;
+}
+
+.mainbody > .mask div .tops .iconPc, .mainbody > .mask div .tops .iconSina, .mainbody > .mask div .tops .iconWeChat {
+    float: left;
+    background-size: 0.27rem 0.27rem;
+    font-size: 0.12rem;
+}
+
+.mainbody > .mask div .minbody {
+    margin-top: 0.02rem;
+    padding: 0.25rem;
+    background: rgba(67, 61, 54, 0.4);
+    border-radius: 0.02rem;
+}
+
+/*树图*/
+
+.node {
+    cursor: pointer;
+}
+
+.overlay {
+    /*background-color: #2F3242;*/
+}
+
+.node circle {
+    fill: #fff;
+    stroke: #c59c68;
+    stroke-width: 1.5px;
+}
+
+.node text {
+    font-size: 10px;
+    font-family: sans-serif;
+    fill: #ebc58c;
+}
+
+.link {
+    fill: none;
+    stroke: #858382;
+    stroke-width: 1.5px;
+}
+
+.templink {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+}
+
+.ghostCircle.show {
+    display: block;
+}
+
+.ghostCircle, .activeDrag .ghostCircle {
+    display: none;
+}
+
+/*不选中文本*/
+.articleReproduceAnalysis .minbody {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+/*加载中*/
+.loading{
+    width:3rem !important;
+    height:3rem !important;
+    background: url("../../static/img/icon-loading.gif") center center no-repeat !important;
+    background-size: 3rem 3rem !important;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin: auto;
+    z-index: 5;
+    display: none;
+}
+.noData{
+    width:3rem !important;
+    height:3rem !important;
+    background: url("../../static/img/icon-noData.png") center center no-repeat !important;
+    background-size: 3rem 3rem !important;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin: auto;
+    z-index: 5;
+    display: none;
+}
+.block{
+    display: block !important;
+}
